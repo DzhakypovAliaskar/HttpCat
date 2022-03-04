@@ -26,22 +26,22 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun getCalculation() {
-                     binding.textEd.addTextChangedListener(object: TextWatcher{
-                         override fun beforeTextChanged(
-                             p0: CharSequence?,
-                             p1: Int,
-                             p2: Int,
-                             p3: Int
-                         ) {
-                         }
+        binding.textEd.addTextChangedListener(object : TextWatcher {
+            override fun beforeTextChanged(
+                p0: CharSequence?,
+                p1: Int,
+                p2: Int,
+                p3: Int
+            ) {
+            }
 
-                         override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
-                             binding.numberTv.text = p0?.length.toString()
-                         }
+            override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+                binding.numberTv.text = p0?.length.toString()
+            }
 
-                         override fun afterTextChanged(p0: Editable?) {
-                         }
-                     })
+            override fun afterTextChanged(p0: Editable?) {
+            }
+        })
     }
 
     private fun getImage() {
